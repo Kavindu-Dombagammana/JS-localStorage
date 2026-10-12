@@ -46,6 +46,8 @@ function btnUpdateCustomerOnAction() {
             element.name = document.getElementById("txtname").value;
             element.age = document.getElementById("txtage").value;
             element.address = document.getElementById("txtaddress").value;
+        }else{
+            alert("Customer Not Found");
         }
     });
     localStorage.setItem("customer",JSON.stringify((customer)));
